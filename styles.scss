@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap');
+$blue: #025A94;
+$off-white: #e3e3e3;
+$off-black: #232323;
+$dark-gray: #333333;
+$primary-font: 'Open Sans', sans-serif;;
+$secondary-font:  'Montserrat', sans-serif;
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+ 
+}
+
+.nectar-button {
+   border-radius:5px 5px 5px 5px;
+  -webkit-border-radius:5px 5px 5px 5px;
+  box-shadow:0 -3px rgba(0,0,0,0.1) inset;
+  -webkit-box-shadow:0 -3px rgba(0,0,0,0.1) inset;
+  transition:opacity .45s cubic-bezier(0.25,1,0.33,1);
+  -webkit-transition:opacity .45s cubic-bezier(0.25,1,0.33,1);
+  -o-transition:opacity .45s cubic-bezier(0.25,1,0.33,1);
+  color:#FFF;
+  font-family:$primary-font;
+  font-weight:600;
+  font-size:14px;
+  padding:13px 18px;
+  position:relative;
+  top: 0;
+  margin-bottom:10px;
+  opacity:1;
+  line-height:20px;
+  background-color:$blue;
+  display:inline-block;
+  text-transform: uppercase;
+  transition: all 500ms;
+}
+
+.nectar-button-icon {
+  margin-left: 10px;
+  font-size:14px;
+}
+
+.nectar-button:hover {
+  cursor: pointer;
+  opacity:1;
+  -webkit-transform:translateY(-2px);
+  transform:translateY(-2px);
+}
+
+
+#modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+ // display: none;
+  
+}
+
+#modal-inner {
+  background:$off-white;
+  height: auto;
+  width: 50vw;
+  opacity: 1;
+  margin: 20px auto;
+  text-align:center;
+}
+
+#modal-inner h2 {
+  color:$blue;
+  font-family: $secondary-font;
+  font-size:18px;
+  font-weight:400;
+  text-transform:uppercase;
+}
+
+
+
+#modal-inner p {
+  font-family: $secondary-font;
+  font-size: 16px;
+  color:$off-black;
+  font-weight:300;
+  line-height:1.5;
+}
+
+
+#modal-close {
+  float:right;
+  font-family: $primary-font;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-right:10px;
+  font-size: 20px;
+  color:$off-black;
+  transition: all 500ms;
+
+}
+
+#modal-close:hover {
+  cursor: pointer;
+  color: black;
+}
+
+#modal-content {
+  padding: 10px;
+}
+
+//Form styling
+#modal-inner-form {
+  border-radius:2px;
+  color:$off-black;
+}
+
+input, textarea {
+  box-shadow: none;
+  background: $blue;
+  border:0;
+  border-radius: 1px;
+  width: 90%;
+  background: rgba(0,0,0,0.04);
+  padding: 10px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  color:$dark-gray;
+  font-size:14px;
+
+}
+
+.form-element {
+  margin:10px;
+  text-align:center;
+  margin: auto 0;
+  padding:5px;
+}
+
+.form-element:last-child {
+  text-align: left;
+  padding-left:25px;
+}
+
+.form-error {
+  background:white;
+  color: $blue !important;
+  font-family: $primary-font;
+  font-size:14px;
+  margin: 0 auto;
+  padding: 2px 6px;
+  width:91%;
+  text-align:left;
+}
+
+.nectar-button-submit {
+  box-shadow: none;
+  background: $blue;
+  border:0;
+  border-radius: 3px;
+  padding:13px 18px;
+  font-weight:300;
+  font-size: 14px;
+  font-family: $primary-font;
+  color:white;
+  text-transform: uppercase;
+  transition: all 500ms;
+}
+
+.nectar-button-submit:hover {
+  cursor: pointer;
+  opacity:0.8;
+  -webkit-transform:translateY(-2px);
+  transform:translateY(-2px);
+}
+
+#success-message {
+  color:$blue;
+}
